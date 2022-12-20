@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.sql.Connection;
@@ -17,6 +18,7 @@ import java.sql.Statement;
 
 public class AddEmployee extends AppCompatActivity implements View.OnClickListener
 {
+    ImageView Img;
     EditText AddName, AddSurname, AddPatronymic;
     Button btnAdd;
 

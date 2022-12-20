@@ -44,21 +44,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             if (connection != null)
             {
-                String query = "Select * from Persons";
+                String query = "Select * from Employees";
                 Statement statement = connection.createStatement();
                 ResultSet resultSet = statement.executeQuery(query);
 
                 while (resultSet.next())
                 {
                     id.setText(resultSet.getString(1));
-                    Name.setText(resultSet.getString(2));
-                    Patronymic.setText(resultSet.getString(3));
-                    Surname.setText(resultSet.getString(4));
+                    Surname.setText(resultSet.getString(2));
+                    Name.setText(resultSet.getString(3));
+                    Patronymic.setText(resultSet.getString(4));
                 }
                 connection.close();
 
             }
-
+            else
+            {
+                ConnectionResult = "Check connection";
+            }
         }
         catch (Exception ex)
         {

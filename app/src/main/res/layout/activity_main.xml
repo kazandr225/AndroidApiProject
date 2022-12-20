@@ -9,12 +9,13 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnNext"
-        android:layout_width="342dp"
-        android:layout_height="98dp"
-
-        android:layout_marginTop="220dp"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/button_shape_circle"
         android:onClick="GetData"
         android:text="Все записи"
+        android:textColor="@color/mncolor"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
@@ -24,11 +25,13 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnAdd"
-        android:layout_width="342dp"
-        android:layout_height="98dp"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
         android:layout_marginTop="36dp"
+        android:background="@drawable/button_shape_circle"
         android:onClick="GetData"
         android:text="добавить запись"
+        android:textColor="@color/mncolor"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

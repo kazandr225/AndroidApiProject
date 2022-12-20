@@ -14,7 +14,7 @@ public class ConnectionHelper {
     public  Connection connectionClass()
     {
         ip = "ngknn.ru";
-        dataBase = "Employees_bd";
+        dataBase = "Emp_bd";
         userPassword = "12357";
         userName = "31П";
         port = "1433";
